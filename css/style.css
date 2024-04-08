@@ -97,7 +97,7 @@ nav .link {
 	text-align: center;
 }
 
-.link.active {
+.link:hover {
 	color: var(--main-color);
 	box-shadow: 0 -2px 0 var(--main-color);
 }
@@ -137,6 +137,10 @@ button.localized .fa-solid {
 .searchBar {
 	width: 100%;
 	position: relative;
+}
+
+.hidden {
+  display: none;
 }
 
 input[type='search'] {
@@ -497,12 +501,12 @@ button[type='submit'] .fa-solid {
 		padding: 14px 0;
 	}
 
-	.link.active {
+	.link:hover {
 		color: var(--main-color);
 		box-shadow: 0 2px 0 var(--main-color);
 	}
 
-	.link:not(.active) {
+	.link:not(.link:hover) {
 		box-shadow: 0 2px 0 var(--main-bg-color);
 	}
 

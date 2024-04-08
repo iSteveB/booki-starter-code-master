@@ -14,11 +14,9 @@
 	<body>
 		<div class="main-container">
 			<header>
-				<div class="logo">
-					<img src="./images/logo/Booki.png" alt="Logo de Booki">
-				</div>
+				<img src="./images/logo/Booki.png" alt="Logo de Booki">
 				<nav>
-					<a class="link active" href="#hebergements">Hébergements</a>
+					<a class="link" href="#hebergements">Hébergements</a>
 					<a class="link" href="#activities">Activités</a>
 				</nav>
 			</header>
@@ -36,11 +34,12 @@
 							<i class="fa-solid fa-location-dot"></i>
 						</button>
   						<div class="searchBar">
-							<input type="search" name="searchBar" placeholder="Marseille, France">
-							<button type="submit">
-								<i class="fa-solid fa-magnifying-glass"></i>
-								<span>Rechercher</span>
-							</button>
+                <label for="searchInput" class="hidden">Recherche</label>
+						    <input type="search" id="searchInput" name="searchInput" placeholder="Marseille, France">
+							  <button type="submit">
+								  <i class="fa-solid fa-magnifying-glass"></i>
+								  <span>Rechercher</span>
+							  </button>
 						</div>
 					</form>
 
